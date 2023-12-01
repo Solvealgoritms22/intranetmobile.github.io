@@ -1,0 +1,29 @@
+{
+    "services": [
+        {
+            "icon": "⚙️",
+            "name": "Soporte Técnico",
+			"action": "link",
+			"url": "https://www.ejemplo.com/soporte"
+        },
+        {
+            "icon": "📮",
+            "name": "Buzón de sugerencia",
+            "action": "modal",
+            "modalId": "sugerenciasModal"
+        },
+        {
+            "icon": "🔧",
+            "name": "<span>ISO</span>tools",
+			"action": "link",
+			"url": "https://www.ejemplo.com/soporte"
+        },
+        {
+            "icon": "📞",
+            "name": "Extensiones Telefónicas CNE",
+			"action": "link",
+			"url": "https://www.ejemplo.com/soporte"
+        }
+		
+    ]
+}

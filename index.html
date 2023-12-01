@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidad CNE</title>
+	<link rel="shortcut icon" type="image/icon" href="assets/img/items/icon-page.png">
+    <link rel="stylesheet" href="assets/css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+	 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css2?family=MonteCarlo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-toggle">☰</div>
+            <div class="login" onclick="openModalById('loginModal')">Login <i class="far fa-user"></i></div>
+        </nav>
+        <div class="carousel">
+		<div class="carousel-background"></div>   
+		  <div class="carousel-overlay"></div> <!-- Div para el degradado -->
+            <div class="carousel-content">
+                <img src="assets/img/items/logo.png" alt="Logo de la Comisión Nacional de Energía" class="logo">
+                <h1><!--Aqui va el titulo de la noticia--></h1>
+                <hr class="separator">
+                <button class="button-general">LEER MÁS</button>
+				<div class="owl-dots">
+                    <!-- Los puntos se agregarán dinámicamente aquí -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+      <div class="services">
+          <div class="service-container">
+              <!-- Los servicios se cargarán aquí dinámicamente -->
+          </div>
+          <button class="arrow left-arrow">❮</button>
+          <button class="arrow right-arrow">❯</button>
+      </div>
+<div class="birthday-section">
+    <div class="birthday-highlight">
+        <div class="profile-container">
+            <div class="birthday-info">			
+                <h1 class="birthday-greeting"><img src="assets/img/items/gorrito.png" alt="Gorro de Cumpleaños" class="birthday-hat">Feliz</h1>
+				<h1 class="birthday-greeting2">Cumpleaños</h1>
+                <h2 class="birthday-name">Juan Pérez</h2>
+                <p class="birthday-role">Coordinador de Tech</p>
+            </div>
+			<div class="birthday-background"></div>
+            <div class="profile-image-container">
+			    <img src="assets/img/items/globo1.svg" alt="Globo1" class="globo1">	
+				<img src="assets/img/items/globo2.svg" alt="Globo2" class="globo2">
+                <img src="assets/img/perfiles/user.svg" alt="Usuario" class="birthday-photo">
+                <img src="assets/img/items/pastel.svg" alt="Pastel de Cumpleaños" class="birthday-cake">
+				<img src="assets/img/items/circle_base.svg" alt="Base" class="birthday-base">
+            </div>
+        </div>
+    </div>
+    <div class="birthday-list">
+        <h3>CUMPLEAÑOS DEL MES</h3>
+        <ul>
+            <li><span style="font-weight: bold;">❯ Juan Pérez</span> <span>22 de Julio</span></li>
+			<hr class="separator2">
+			<li><span style="font-weight: bold;">❯ Darling Fajardo</span> <span>23 de Julio</span></li>
+			<hr class="separator2">
+			<li><span style="font-weight: bold;">❯ Maylenni Encarnacion</span> <span>24 de Julio</span></li>
+			<hr class="separator2">
+			<li><span style="font-weight: bold;">❯ Kevin Gomez</span> <span>24 de Julio</span></li>
+			<hr class="separator2">
+			<li><span style="font-weight: bold;">❯ Geovany Urraca</span> <span>24 de Julio</span></li>
+            <!-- Repetir para cada cumpleaños -->
+        </ul>
+    </div>  
+  <hr class="separator3">
+</div>
+<div class="events-section">
+  <h2 id="main-event-title" class="main-event-title">PRÓXIMO EVENTO</h2>
+    <hr class="separator">
+    <div class="event-header">
+        <img id="main-event-image" src="assets/img/perfiles/user.svg" alt="Imagen evento" class="event-image">
+        <h2 id="main-event-heading">TITULO DEL EVENTO</h2>
+    </div>
+    <div class="event-details">
+        <p id="main-event-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry industry industry industry industry industry...</p>
+        <div class="event-info">
+            <p id="main-event-date"><span style="font-weight: 500;"><i class="far fa-calendar"></i> FECHA:</span><span class="spacer"></span><span style="font-weight: bold;">00 / 00 / 0000</span></p>
+            <p id="main-event-location"><span style="font-weight: 500;"><i class="far fa-map"></i> LUGAR:</span><span class="spacer"></span><span style="font-weight: bold;">Hotel tal, salón tal</span></p>
+            <p id="main-event-time"><span style="font-weight: 500;"><i class="far fa-clock"></i> HORA:</span><span class="spacer"></span><span style="font-weight: 700;">&nbsp;0:00 AM / PM</span></p>
+        </div>
+    </div>
+	<h3 id="other-events-title" style="color: #1E3B6C; font-weight: 500;" >OTROS</h3>
+    <div class="other-events-section" id="other-events-container">
+        <!-- Los eventos secundarios se cargarán aquí dinámicamente -->
+    </div>
+<div class="news-section">
+    <h2 id="main-event-title" class="main-event-title">CÁPSULAS INFORMATIVAS</h2>
+	<hr class="separator">
+    <div class="news-card">
+        <div class="news-image-container">
+            <span class="news-prev">❮</span>
+			   <div class="news-image-wrapper">
+                 <img src="assets/img/perfiles/user.svg" alt="Descripción de la imagen" class="news-image">
+			   </div>
+            <span class="news-next">❯</span>
+        </div>
+        <h3 class="news-title">Vicepresidenta de la República encabeza simposio de planificación energética por XXII Aniversario CNE</h3>
+        <button class="read-more-btn">LEER MÁS</button>
+    </div>
+</div>
+
+
+</div>
+
+    </main>
+
+<!-- Modal del login -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button" onclick="closeModal('loginModal')">&times;</span><br><br>
+        <h2>Login</h2>
+        <p>Contenido del login...</p>
+        <!-- Más contenido del login -->
+    </div>
+</div>
+	
+<!-- Modal de Buzon de sugerencias -->
+<div id="sugerenciasModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button" onclick="closeModal('sugerenciasModal')">&times;</span><br><br>
+        <h2>Buzon de sugerencias</h2>
+        <p>Contenido del modal...</p>
+        <!-- Más contenido del modal -->
+    </div>
+</div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone-with-data.min.js"></script>
+<script src="assets/js/carrousel.js"></script>
+<script src="assets/js/services.js"></script>
+<script src="assets/js/openmodalgeneral.js"></script>
+<script src="assets/js/events.js"></script>
+</html>
+

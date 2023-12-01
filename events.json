@@ -1,0 +1,29 @@
+{
+  "events": [
+    {
+      "title": "Evento Principal",
+      "image": "assets/img/perfiles/user.svg",
+      "description": "Descripción del evento principal...",
+      "date": "2023-11-30",
+      "location": "Hotel Principal, Salón A",
+      "time": "8:00 PM"
+    },
+    {
+      "title": "Evento Secundario 1",
+      "image": "assets/img/perfiles/user.svg",
+      "description": "Descripción del evento secundario 1...",
+      "date": "2023-12-10",
+      "location": "Hotel Secundario, Salón B",
+      "time": "6:00 PM"
+    },
+	{
+      "title": "Evento Secundario 2",
+      "image": "assets/img/perfiles/user.svg",
+      "description": "Descripción del evento secundario 2...",
+      "date": "2023-12-20",
+      "location": "Hotel Secundario, Salón B",
+      "time": "6:00 PM"
+    }
+
+  ]
+}
