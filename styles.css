@@ -114,7 +114,7 @@
        transform: translate(-1%, -50%); /* Ajuste fino para centrar exactamente */
        content: attr(data-tooltip); /* Muestra el título completo */
        position: absolute;
-       bottom: -180px; /* Ajusta según la ubicación deseada */
+       bottom: -185px; /* Ajusta según la ubicación deseada */
        left: 0;
        white-space: pre-wrap; /* Permite saltos de línea y espacios */
        background-color: black;
