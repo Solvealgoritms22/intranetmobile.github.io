@@ -4,7 +4,6 @@
         margin: 0;
         padding: 0;
 		font-family: Montserrat;
-	        background-color: #D9D9D9;
     }
 
     nav {
@@ -363,6 +362,7 @@
        text-decoration: none;
        cursor: pointer;
     }
+
 	
 .birthday-section {
     background: white;
@@ -423,8 +423,9 @@
 .birthday-role {
     margin-bottom: 30px;
 	color: #123c6d;
-	width: 115px;
+	width: 150px;
 	font-size: 15px;
+	height: 35px;
 }
 
 .profile-image-container {
@@ -622,7 +623,8 @@ background: #eec96b;
 }
 
 .event-content h3 {
-    font-size: 22px;
+    font-size: 19px;
+	height: 70px;
     margin: 0 0 10px 0;
 }
 
@@ -651,8 +653,8 @@ background: #eec96b;
 }
 
 .event-image2:hover {
-	background-color: #FF0000;
-	border: 3px solid #FF0000;
+	background-color: #ff22225e;
+	border: 3px solid #ff22225e;
 }
 
 .event-image2 img {
@@ -739,6 +741,7 @@ background: #eec96b;
     color: #263A6B;
     font-weight: bold;
     margin-bottom: 20px;
+	height: 100px;
 }
 
 .read-more-btn {
@@ -756,43 +759,182 @@ background: #eec96b;
     margin-bottom: -5px;
 }
 
-/* Estilos para el modal */
-.modal {
+
+
+.documents-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+	background-color: #1E487A;
+}
+
+.document-card-container {
+    background-color: #1E487A;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px 0;
+    position: relative;
+	text-align: right;
+    width: 90%; /* O el ancho que prefieras */
+    max-width: 1000px; /* O el ancho máximo que prefieras */
+	border: 3px solid white;
+	cursor: pointer;
+}
+
+.document-card-container:hover {
+	background-color: #ff22225e;
+}
+
+.document-card {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.document-text {
+    color: #fff;
+    text-align: left;
+    padding-left: 20px;
+    z-index: 1;
+}
+
+.document-text h2 {
+    font-size: 18px;
+    width: 130px;
+	margin-left: -20px;
+}
+
+.document-image {
+    position: absolute;
+    right: 10%;
+    width: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.document-image img {
+    width: 130px;
+    margin-right: -50px;
+    height: auto;
+   /* box-shadow: 5px 5px 15px rgba(0,0,0,0.5); */
+}
+
+/* Estilo base para el modal */
+.qr-modal {
     display: none; /* Oculto por defecto */
-    position: fixed;
-    z-index: 1000; /* Encima de todo */
+    position: fixed; /* Fijo en la pantalla, sin importar el scroll */
+    z-index: 9999; /* Alto valor para estar por encima de todo */
     left: 0;
     top: 0;
-    width: 100%; /* Anchura completa */
-    height: 100%; /* Altura completa */
-    overflow: auto; /* Habilitar scroll si es necesario */
-    background-color: rgba(0,0,0,0.6); /* Color de fondo */
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    overflow: auto; /* Permite scroll si el contenido es muy grande */
+    background-color: rgba(0,0,0,0.4); /* Fondo semitransparente */
 }
 
-.modal-content2 {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px; /* Ajustar según sea necesario */
+/* Contenido del modal */
+.qr-modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 10% auto; /* Centrado con márgenes automáticos */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ancho del contenido del modal */
+    max-width: 500px; /* Ancho máximo para contener el contenido */
 }
 
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #fff;
-    font-size: 40px;
+/* Botón para cerrar el modal */
+.close2 {
+    color: #aaa;
+    float: right; /* Alineación a la derecha */
+    font-size: 28px; /* Tamaño del icono de cierre */
     font-weight: bold;
-    cursor: pointer;
 }
 
-.close:hover,
-.close:focus {
-    color: #bbb;
+/* Cambia el color al pasar el ratón por encima del botón de cierre */
+.close2:hover,
+.close2:focus {
+    color: black;
     text-decoration: none;
-    cursor: pointer;
+    cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
 }
 
+/* Asegúrate de que la imagen del QR no sea demasiado grande */
+#qrCodeImage {
+    max-width: 100%; /* Ajusta la imagen para que se ajuste al modal */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Botón Volver al principio */
+#myBtn {
+  display: none; /* Oculto por defecto */
+  position: fixed; /* Fijo en la página */
+  bottom: 20px; /* 20px desde la parte inferior */
+  right: 30px; /* 30px desde la derecha */
+  z-index: 99; /* Asegura que esté sobre otros elementos */
+  border: none; /* Sin bordes */
+  outline: none; /* Sin contorno */
+  background-color: red; /* Fondo rojo, cambia según tu esquema de color */
+  color: white; /* Texto blanco */
+  cursor: pointer; /* Indica que es clickeable */
+  padding: 15px; /* Espaciado interno */
+  border-radius: 50%; /* Hace el botón redondo */
+  width: 50px; /* Ajusta al tamaño deseado */
+  height: 50px; /* Ajusta al tamaño deseado */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#myBtn:hover {
+  background-color: #555; /* Color al pasar el ratón por encima */
+}
+
+/* Asegúrate de que el icono de Font Awesome sea blanco y tenga el tamaño adecuado */
+#myBtn i {
+  color: white;
+  font-size: 20px; /* Ajusta el tamaño del icono según sea necesario */
+}
+
+.footer-mobile {
+    background-color: #1E3B6C;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-logo img {
+    width: 300px;/* Ajusta el tamaño del logotipo */
+    margin-bottom: 20px;
+}
+
+.footer-content p,
+.footer-content a {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-social-icons a:hover {
+    text-decoration: underline;
+	color: red;
+}
+
+.footer-social-icons {
+    margin-top: 20px;
+}
+
+.footer-social-icons a {
+    font-size: 24px; /* Tamaño de los iconos */
+    margin: 0 10px; /* Espacio alrededor de los iconos */
+    color: white; /* Color de los iconos */
+}
 
 
 }
@@ -968,4 +1110,13 @@ background: #eec96b;
     .news-prev, .news-next {
        top: 110px;
     }
+	
+    .footer-logo img {
+       width: 200px;
+    }
+	
+	#myBtn {
+		right: 5px;
+	}
+
 }
