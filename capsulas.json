@@ -1,0 +1,15 @@
+{
+  "capsulas": [
+    {
+      "titulo": "Vicepresidenta de la República encabeza simposio de planificación energética",
+      "imagen": "assets/img/perfiles/user.svg",
+      "descripcion": "Descripción del evento 1"
+    },
+    {
+      "titulo": "Anuncio de nuevas políticas energéticas",
+      "imagen": "assets/img/perfiles/user.svg",
+      "descripcion": "Descripción del evento 2"
+    }
+   
+  ]
+}

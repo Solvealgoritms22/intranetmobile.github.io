@@ -1,0 +1,15 @@
+[
+    {
+        "title": "BOLETÍN VISIÓN ENERGÉTICA",
+        "image": "assets/img/items/boletin.png",
+        "alt": "Boletín Visión Energética",
+		"qrCode": "assets/img/qr/boletin-vision-energetica-qr.svg"
+    },
+    {
+        "title": "PLAN ENERGÉTICO NACIONAL 2022 - 2036",
+        "image": "assets/img/items/planenergetico.png",
+        "alt": "Plan Energético Nacional",
+		"qrCode": "assets/img/qr/boletin-vision-energetica-qr.svg"
+    }
+
+]

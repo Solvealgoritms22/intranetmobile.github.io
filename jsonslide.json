@@ -2,7 +2,7 @@
     "slides": [
         {
             "id": 1698183253,
-            "image": "capacitacion.jpg",
+            "image": "assets/img/slider/capacitacion.jpg",
             "title": "CNE capacita más de 50 mil dominicanos sobre uso eficiente y ahorro de la energía",
             "link": "https://www.cne.gob.do/noticia/cne-capacita-mas-de-50-mil-dominicanos-sobre-uso-eficiente-y-ahorro-de-la-energia/",
             "linkText": "Leer más",
@@ -16,7 +16,7 @@
         },
         {
             "id": 1698183965,
-            "image": "Image9.jpeg",
+            "image": "assets/img/slider/Image9.jpeg",
             "title": "Equipo de la Dirección Administrativa Financiera participa en Team Building",
             "link": "https://intranet.cne.gob.do/app/noticias?id=1698183965",
             "linkText": "Leer más",
@@ -30,7 +30,7 @@
         },
         {
             "id": 169818396,
-            "image": "Image9.jpeg",
+            "image": "assets/img/slider/Image9.jpeg",
             "title": "Equipo de la Dirección Administrativa Financiera participa en Team Building",
             "link": "https://intranet.cne.gob.do/app/noticias?id=1698183965",
             "linkText": "Leer más",
@@ -44,7 +44,7 @@
         },
         {
             "id": 169818397,
-            "image": "Image9.jpeg",
+            "image": "assets/img/slider/Image9.jpeg",
             "title": "Equipo de la Dirección Administrativa Financiera participa en Team Building",
             "link": "https://intranet.cne.gob.do/app/noticias?id=1698183965",
             "linkText": "Leer más",
@@ -58,7 +58,7 @@
         },
         {
             "id": 16981839658,
-            "image": "Image9.jpeg",
+            "image": "assets/img/slider/Image9.jpeg",
             "title": "Equipo de la Dirección Administrativa Financiera participa en Team Building",
             "link": "https://intranet.cne.gob.do/app/noticias?id=1698183965",
             "linkText": "Leer más",
@@ -72,7 +72,7 @@
         },
         {
             "id": 169818396,
-            "image": "Image9.jpeg",
+            "image": "assets/img/slider/Image9.jpeg",
             "title": "Equipo de la Dirección Administrativa Financiera participa en Team Building",
             "link": "https://intranet.cne.gob.do/app/noticias?id=1698183965",
             "linkText": "Leer más",
@@ -86,7 +86,7 @@
         },
         {
             "id": 1698184110,
-            "image": "Image11.jpeg",
+            "image": "assets/img/slider/Image11.jpeg",
             "title": "Colaboradores CNE visitan instalaciones de CEPM",
             "link": "https://intranet.cne.gob.do/app/noticias?id=1698184110",
             "linkText": "Leer más",

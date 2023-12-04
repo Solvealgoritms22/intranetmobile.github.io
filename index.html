@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comunidad CNE</title>
-	<link rel="shortcut icon" type="image/icon" href="icon-page.png">
-    <link rel="stylesheet" href="styles.css">
+	<link rel="shortcut icon" type="image/icon" href="assets/img/items/icon-page.png">
+    <link rel="stylesheet" href="assets/css/styles.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 	 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 	 <link href="https://fonts.googleapis.com/css2?family=MonteCarlo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -14,13 +14,13 @@
     <header>
         <nav>
             <div class="menu-toggle">☰</div>
-            <div class="login" onclick="openModalById('loginModal')">Login <i class="far fa-user"></i></div>
+            <div class="login" onclick="openModalByIdd('loginModal')">Login <i class="far fa-user"></i></div>
         </nav>
         <div class="carousel">
 		<div class="carousel-background"></div>   
 		  <div class="carousel-overlay"></div> <!-- Div para el degradado -->
             <div class="carousel-content">
-                <img src="logo.png" alt="Logo de la Comisión Nacional de Energía" class="logo">
+                <img src="assets/img/items/logo.png" alt="Logo de la Comisión Nacional de Energía" class="logo">
                 <h1><!--Aqui va el titulo de la noticia--></h1>
                 <hr class="separator">
                 <button class="button-general">LEER MÁS</button>
@@ -38,22 +38,23 @@
           <button class="arrow left-arrow">❮</button>
           <button class="arrow right-arrow">❯</button>
       </div>
-<div class="birthday-section">
-    <div class="birthday-highlight">
-        <div class="profile-container">
-            <div class="birthday-info">			
-                <h1 class="birthday-greeting"><img src="gorrito.png" alt="Gorro de Cumpleaños" class="birthday-hat">Feliz</h1>
-				<h1 class="birthday-greeting2">Cumpleaños</h1>
-                <h2 class="birthday-name">Juan Pérez</h2>
-                <p class="birthday-role">Coordinador de Tech</p>
-            </div>
-			<div class="birthday-background"></div>
+      <div class="birthday-section">
+          <div class="birthday-highlight">
+              <div class="profile-container">
+                  <div class="birthday-info">			
+                      <h1 class="birthday-greeting"><img src="assets/img/items/gorrito.png" 
+					  alt="Gorro de Cumpleaños" class="birthday-hat">Feliz</h1>
+				      <h1 class="birthday-greeting2">Cumpleaños</h1>
+                      <h2 class="birthday-name">Juan Pérez</h2>
+                      <p class="birthday-role">Coordinador de Tech</p>
+                   </div>
+	  <div class="birthday-background"></div>
             <div class="profile-image-container">
-			    <img src="globo1.svg" alt="Globo1" class="globo1">	
-				<img src="globo2.svg" alt="Globo2" class="globo2">
-                <img src="user.svg" alt="Usuario" class="birthday-photo">
-                <img src="pastel.svg" alt="Pastel de Cumpleaños" class="birthday-cake">
-				<img src="circle_base.svg" alt="Base" class="birthday-base">
+			    <img src="assets/img/items/globo1.svg" alt="Globo1" class="globo1">	
+				<img src="assets/img/items/globo2.svg" alt="Globo2" class="globo2">
+                <img src="assets/img/perfiles/user.svg" alt="Usuario" class="birthday-photo">
+                <img src="assets/img/items/pastel.svg" alt="Pastel de Cumpleaños" class="birthday-cake">
+				<img src="assets/img/items/circle_base.svg" alt="Base" class="birthday-base">
             </div>
         </div>
     </div>
@@ -78,7 +79,7 @@
   <h2 id="main-event-title" class="main-event-title">PRÓXIMO EVENTO</h2>
     <hr class="separator">
     <div class="event-header">
-        <img id="main-event-image" src="user.svg" alt="Imagen evento" class="event-image">
+        <img id="main-event-image" src="assets/img/perfiles/user.svg" alt="Imagen evento" class="event-image">
         <h2 id="main-event-heading">TITULO DEL EVENTO</h2>
     </div>
     <div class="event-details">
@@ -95,24 +96,64 @@
     </div>
 <div class="news-section">
     <h2 id="main-event-title" class="main-event-title">CÁPSULAS INFORMATIVAS</h2>
-	<hr class="separator">
+    <hr class="separator">
     <div class="news-card">
         <div class="news-image-container">
             <span class="news-prev">❮</span>
-			   <div class="news-image-wrapper">
-                 <img src="user.svg" alt="Descripción de la imagen" class="news-image">
-			   </div>
+            <div class="news-image-wrapper">
+                <img src="assets/img/perfiles/user.svg" onclick="openModalById('capsulasModal')" alt="Descripción de la imagen" class="news-image">
+            </div>
             <span class="news-next">❯</span>
         </div>
         <h3 class="news-title">Vicepresidenta de la República encabeza simposio de planificación energética por XXII Aniversario CNE</h3>
-        <button class="read-more-btn">LEER MÁS</button>
+    </div>
+</div>
+<section class="documents-section">
+    <!-- Los documentos se cargarán aquí dinámicamente -->
+</section>
+<footer class="footer-mobile">
+    <div class="footer-logo">
+        <img src="assets/img/items/logoCNE.svg" alt="Logotipo de la Comisión Nacional de Energía">
+    </div>
+    <div class="footer-content">
+        <p>Ave. Rómulo Betancourt No. 361, Bella Vista, Santo Domingo, R. D.</p>
+        <p>Tel: 809-540-9002</p>
+        <p><a href="mailto:cne-info@cne.gob.do">cne-info@cne.gob.do</a></p>
+        <div class="footer-links">
+            <a href="#">Términos de uso</a> | 
+            <a href="#">Políticas de privacidad</a> | 
+            <a href="#">Preguntas frecuentes</a>
+        </div>
+        <p>©2023 Todos los Derechos Reservados</p>
+    </div><br><br>
+    <div class="footer-social-icons">
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    </div><br>
+</footer>
+
+    </main>
+
+<!-- Estructura del Modal -->
+<div id="qrCodeModal" class="qr-modal">
+    <div class="qr-modal-content">
+        <span class="close2" onclick="closeModal2()">&times;</span>
+        <h4 id="modalTitle">Título del Documento</h4>
+        <img id="qrCodeImage" src="" alt="Código QR" />
     </div>
 </div>
 
 
+<!-- Modal de capsulas -->
+<div id="capsulasModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button" onclick="closeModal('capsulasModal')">&times;</span><br><br>
+        <!-- Aqui va la imagen de la capsula -->
+    </div>
 </div>
-
-    </main>
+</div>
 
 <!-- Modal del login -->
 <div id="loginModal" class="modal">
@@ -134,13 +175,17 @@
     </div>
 </div>
 
+<button onclick="topFunction()" id="myBtn" title="Ir arriba"><i class="fas fa-arrow-up"></i></button>
+
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone-with-data.min.js"></script>
-<script src="carrousel.js"></script>
-<script src="services.js"></script>
-<script src="openmodalgeneral.js"></script>
-<script src="events.js"></script>
+<script src="assets/js/carrousel.js"></script>
+<script src="assets/js/services.js"></script>
+<script src="assets/js/openmodalgeneral.js"></script>
+<script src="assets/js/events.js"></script>
+<script src="assets/js/capsulas.js"></script>
+<script src="assets/js/documents.js"></script>
+<script src="assets/js/back_to_top.js"></script>
 </html>
-
